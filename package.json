@@ -11,6 +11,7 @@
   "dependencies": {
     "@base-ui/react": "^1.1.0",
     "@clerk/nextjs": "^6.37.1",
+    "@e2b/code-interpreter": "^2.3.3",
     "@hookform/resolvers": "^5.2.2",
     "@inngest/agent-kit": "^0.13.2",
     "@prisma/client": "^6.19.2",
