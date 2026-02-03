@@ -1,6 +1,9 @@
+import { onBoardUser } from "@/modules/auth/actions";
 import React from "react";
 
-function layout({ children }) {
+const layout = async ({ children }) => {
+  await onBoardUser();
+
   return (
     <main className="flex flex-col main-h-screen relative overflow-x-hidden">
       {/* {navbar} */}
@@ -8,6 +11,6 @@ function layout({ children }) {
       <div className="flex-1 w-full mt-20">{children}</div>
     </main>
   );
-}
+};
 
 export default layout;
